@@ -2,16 +2,66 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 body {
     background-color: rgb(129, 4, 4);
 }
 
-.op-list {
+.box-main {
+    position: relative;
+    display: grid;
+    height: 84vh;
+}
 
+.img-fundo {
+    position: absolute;
+    width: 130%;
+    z-index: -3;
+    filter: contrast(130%);
+}
+
+header {
+    width: 100vw;
+    height: 9vh;
+    background-color: black;
+}
+
+.titulo {
     display: flex;
+    align-items: end;
+    padding-left: 30px;
+}
+
+.op-titulo > h1 {
+    text-shadow: 2px 2px black;
+    font-size: 5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.detalhe-titulo > span {
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.719);
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.avaliacao {
+    font-size: 2em;
+}
+
+.opcoes {
+    display: flex;
+    align-items: end;
+    padding: 10px;
+}
+
+.op-list {
+    display: flex;
+    position: relative;
     list-style: none;
+    width: 100vw;
+    justify-content: space-evenly;
+    bottom: 0;
 }
 
 .op-list > li > div{
@@ -20,11 +70,11 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    width: 150px;
-    height: 220px;
+    width: 265px;
+    height: 300px;
     margin: 1px;
     padding: 3px;
-    background-color: rgba(0, 0, 0, 15%);
+    background-color: rgba(0, 0, 0, 70%);
     color: rgb(255, 255, 255);
     font-size: 1.2em;
     font-family: arial;
@@ -34,8 +84,9 @@ body {
 
 .op-list > li:not(:last-child) > div::before {
     position: absolute;
+    z-index: 5;
     content: "";
-    width: 2px;
+    width: 50px;
     height: 150px;
     background-color: rgb(255, 255, 255);
     left: 102%;
@@ -64,4 +115,21 @@ body {
 
 .op-list > li > div > .op-icon > img {
     width: 70px;
+}
+
+footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 7vh;
+    background-color: rgba(0, 0, 0, 80%);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div {
+    font-size: 1.5em;
+    margin: 0 40px;
 }
