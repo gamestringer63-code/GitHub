@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+header {
+    width: 100vw;
+}
+
+.box-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: 10px auto;
+    box-shadow: 2px 2px 5px rgb(204, 204, 204);
+    border-radius: 150px;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.lit-menu li {
+    display: flex;
+}
+
+.list-menu li ul {
+    max-width: 0 20px;
+}
