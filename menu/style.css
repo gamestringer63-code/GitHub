@@ -24,10 +24,11 @@ header {
     width: 50px;
 }
 
-.lit-menu li {
+.list-menu li {
     display: flex;
+    margin-right: 10px;
 }
 
 .list-menu li ul {
-    max-width: 0 20px;
+    margin: 0 15px;
 }
