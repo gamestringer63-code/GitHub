@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Python Impressionador</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* ================= RESET ================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#f3f3f3;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+/* ================= VARIÁVEIS ================= */
+
+:root{
+
+--blue:#143d55;
+--gradient1:#255994;
+--gradient2:#182e52;
+--red:#e70c0c;
+
+}
+
+/* ================= CONTAINER ================= */
+
+.card{
+
+max-width:400px;
+width:100%;
+background:linear-gradient(white 50%, #cfcfcf);
+border-radius:6px;
+overflow:hidden;
+
+}
+
+/* ================= HEADER ================= */
+
+.header{
+
+background:var(--blue);
+color:white;
+text-align:center;
+padding:35px 20px;
+position:relative;
+
+}
+
+.title-main{
+
+font-family:"Belanosima", sans-serif;
+font-size:4rem;
+line-height:1;
+
+}
+
+.title-sub{
+
+font-family:"Belanosima", sans-serif;
+font-size:2rem;
+
+}
+
+/* faixa vermelha */
+
+.header::after{
+
+content:"";
+position:absolute;
+width:320px;
+height:90px;
+background:var(--red);
+right:-160px;
+top:-25px;
+transform:rotate(40deg);
+
+}
+
+/* ================= PROMO ================= */
+
+.promo{
+
+position:absolute;
+top:10px;
+right:10px;
+color:white;
+font-family:"Belanosima", sans-serif;
+text-align:right;
+font-size:.8rem;
+
+}
+
+.promo strong{
+
+font-size:1.4rem;
+
+}
+
+/* ================= TEXTO ================= */
+
+.content{
+
+padding:30px 40px;
+text-align:center;
+
+}
+
+.content h4{
+
+margin-bottom:20px;
+color:#3b3b3b;
+
+}
+
+.content p{
+
+font-size:.85rem;
+color:#333;
+
+}
+
+.content strong{
+
+color:#27a9f5;
+
+}
+
+/* ================= ICONES ================= */
+
+.icons{
+
+display:flex;
+justify-content:center;
+gap:12px;
+padding:20px;
+
+}
+
+.icon{
+
+width:40px;
+height:40px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:100px 20px 100px 100px;
+transition:.25s;
+
+}
+
+.icon:hover{
+
+transform:scale(1.15);
+
+}
+
+.icon-inner{
+
+width:34px;
+height:34px;
+background:white;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+.icon-inner img{
+
+width:22px;
+
+}
+
+/* cores */
+
+.python{background:#0084ff}
+.js{background:#3d035f}
+.excel{background:#04812e}
+.powerbi{background:#d89f02}
+.vba{background:#069bc0}
+.sql{background:#046c86}
+.powerpoint{background:#bd3005}
+
+/* ================= OFERTA ================= */
+
+.offer{
+
+margin:20px;
+background:linear-gradient(to right,var(--gradient1),var(--gradient2));
+color:white;
+text-align:center;
+padding:25px;
+border-radius:6px;
+
+}
+
+.offer h2{
+
+font-size:1.6rem;
+
+}
+
+.offer span{
+
+font-size:1.4rem;
+
+}
+
+/* badge */
+
+.offer-badge{
+
+margin-top:12px;
+display:inline-flex;
+align-items:center;
+background:white;
+border-radius:4px;
+font-size:.8rem;
+
+}
+
+.offer-badge div:first-child{
+
+padding:6px;
+color:black;
+
+}
+
+.offer-badge div:last-child{
+
+background:linear-gradient(red,#470202);
+padding:6px 12px;
+color:white;
+font-weight:bold;
+
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media(max-width:420px){
+
+.content{
+
+padding:25px;
+
+}
+
+.title-main{
+
+font-size:3rem;
+
+}
+
+.title-sub{
+
+font-size:1.6rem;
+
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<header class="header">
+
+<div class="promo">
+SÓ HOJE<br>
+R$ <strong>500</strong><br>
+OFF
+</div>
+
+<div class="title-main">PYTHON</div>
+<div class="title-sub">IMPRESSIONADOR</div>
+
+</header>
+
+
+<section class="content">
+
+<h4>
+Assine o Python impressionador com R$500 reais de desconto
+e ainda ganhe acesso a +6 cursos
+</h4>
+
+<p>
+
+Python Impressionador +
+<strong>Javascript</strong> +
+<strong>SQL</strong> +
+<strong>Excel</strong> +
+<strong>Power BI</strong> +
+<strong>VBA</strong> +
+<strong>PowerPoint</strong>
+
+</p>
+
+</section>
+
+
+<div class="icons">
+
+<div class="icon python"><div class="icon-inner"><img src="IMG/Python.png"></div></div>
+
+<div class="icon js"><div class="icon-inner"><img src="IMG/javascript.png"></div></div>
+
+<div class="icon excel"><div class="icon-inner"><img src="IMG/excel.png"></div></div>
+
+<div class="icon powerbi"><div class="icon-inner"><img src="IMG/Power-BI.png"></div></div>
+
+<div class="icon vba"><div class="icon-inner"><img src="IMG/VBA.png"></div></div>
+
+<div class="icon sql"><div class="icon-inner"><img src="IMG/SQL.png"></div></div>
+
+<div class="icon powerpoint"><div class="icon-inner"><img src="IMG/powerpoint.png"></div></div>
+
+</div>
+
+
+<footer class="offer">
+
+<h2>OFERTA IMPERDÍVEL</h2>
+
+<span>Python Impressionador</span>
+
+<div class="offer-badge">
+
+<div>Última oportunidade com</div>
+
+<div>R$500 DE DESCONTO</div>
+
+</div>
+
+</footer>
+
+</div>
+
+</body>
+</html>
