@@ -1,0 +1,39 @@
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgb(214, 12, 12);
+}
+.box .bola {
+  display: grid;
+  justify-content: center;
+  background-color: rgb(214, 12, 12);
+}
+@media (min-width: 800px) {
+  .box .bola span:nth-child(1) {
+    color: aqua;
+    font-size: 4rem;
+    text-align: center;
+  }
+  .box .bola span:nth-child(2) {
+    color: rgb(251, 255, 0);
+    font-size: 4rem;
+    text-align: center;
+  }
+}
+@media (max-width: 799px) {
+  .box .bola span:nth-child(1) {
+    color: rgb(16, 121, 21);
+    font-size: 4rem;
+    text-align: center;
+  }
+  .box .bola span:nth-child(2) {
+    color: rgb(255, 0, 13);
+    font-size: 4rem;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  .box .bola {
+    background-color: rgb(19, 0, 0);
+  }
+}/*# sourceMappingURL=style.css.map */

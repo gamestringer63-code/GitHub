@@ -1,0 +1,44 @@
+$cor1: rgb(214, 12, 12);
+$cor2: rgb(19, 0, 0);
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid $cor1;
+    
+    .bola {
+        display: grid;
+        justify-content: center;
+        background-color: $cor1;
+        
+        @media (min-width: 800px) {
+            span:nth-child(1) {
+            color: aqua;
+            font-size: 4rem;
+            text-align: center;
+            }
+            span:nth-child(2) {
+            color: rgb(251, 255, 0);
+            font-size: 4rem;
+            text-align: center;
+            }
+        }
+        @media (max-width: 799px) {
+            span:nth-child(1) {
+            color: rgb(16, 121, 21);
+            font-size: 4rem;
+            text-align: center;
+            }
+            span:nth-child(2) {
+            color: rgb(255, 0, 13);
+            font-size: 4rem;
+            text-align: center;
+            }
+            
+        }
+        @media (max-width: 800px) {
+            background-color: $cor2;
+        }
+    }
+    
+}
