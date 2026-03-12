@@ -1,0 +1,22 @@
+//====== pointbreak ========
+$breakpoints: (
+    tablet: 760px,
+    desktop: 1024px
+);
+
+//======= Media query ======
+@mixin respond($breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
+body {
+    max-height: 100vh;
+    @include respond(tablet) {
+        background-color: aqua;
+    }
+    @include respond(desktop) {
+        background-color: brown;
+    }
+}
